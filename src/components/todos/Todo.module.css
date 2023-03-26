@@ -1,0 +1,9 @@
+.Todo {
+  background-color: aliceblue;
+  margin: 10px auto;
+  max-width: 30%;
+
+  border-radius: 4px;
+  color: black;
+  font-size: 25px;
+}
