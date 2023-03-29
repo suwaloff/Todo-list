@@ -1,22 +1,33 @@
-.TodoForm {
-  margin: 10px auto;
+.todoFormContainer {
+  margin-bottom: 30px;
+}
+.todoFormContainer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Button {
-  width: 80px;
-  height: 40px;
-  background-color: antiquewhite;
-
-  border-radius: 8px;
+.todoFormContainer button {
+  margin-left: 20px;
+  height: 50px;
   cursor: pointer;
+  font-size: 1.5rem;
+  background-color: beige;
 }
 
-input {
-  width: 300px;
+.todoFormContainer input {
+  width: 45%;
   height: 30px;
-  margin: 15px;
-  padding: 5px;
-  background-color: aliceblue;
-  font-size: 20px;
-  border-radius: 8px;
+  font-size: 1.3rem;
+}
+
+.todoFormContainer button:hover {
+  background-color: rgb(245, 240, 195);
+}
+
+.todoFormContainer input,
+.todoFormContainer button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
 }

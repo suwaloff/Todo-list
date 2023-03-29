@@ -1,27 +1,26 @@
 import { useState } from 'react';
 import styles from './TodoForm.module.css';
 
-function TodoForm({ setTodo, todos }) {
+function TodoForm({ addTodo }) {
   const [text, setText] = useState('');
 
   const onSubmitTodo = (event) => {
     event.preventDefault();
-    setTodo([...todos, text]);
+
+    addTodo(text);
     setText('');
   };
 
   return (
-    <div>
-      <form onSubmit={onSubmitTodo} className={styles.TodoForm}>
+    <div className={styles.todoFormContainer}>
+      <form onSubmit={onSubmitTodo}>
         <input
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Enter new todo"
+          placeholder="add a task.."
         ></input>
-        <button type="submit" className={styles.Button}>
-          Submit
-        </button>
+        <button type="submit">submit</button>
       </form>
     </div>
   );
