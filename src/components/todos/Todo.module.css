@@ -5,14 +5,14 @@
   margin: 15px 0;
   font-size: 1.5rem;
   border-radius: 5px;
-  border: 2px solid #555;
+  border: 2px solid whitesmoke;
   color: #112d49;
-  background-color: #fbfef9;
 }
 
 .todoText {
   width: 100%;
   text-align: left;
+  color: white;
 }
 
 .todoIcon {
@@ -22,6 +22,7 @@
 }
 
 .completedTodo {
+  text-decoration: line-through;
   background-color: unset;
   border-color: gray;
   color: gray;

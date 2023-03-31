@@ -10,24 +10,27 @@
 .todoFormContainer button {
   margin-left: 20px;
   height: 50px;
+  color: whitesmoke;
   cursor: pointer;
   font-size: 1.5rem;
-  background-color: beige;
+  border: 2px solid whitesmoke;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .todoFormContainer input {
   width: 45%;
   height: 30px;
   font-size: 1.3rem;
+  border: none;
 }
 
 .todoFormContainer button:hover {
-  background-color: rgb(245, 240, 195);
+  color: white;
+  border-color: aquamarine;
 }
 
 .todoFormContainer input,
 .todoFormContainer button {
-  border: none;
   padding: 10px 15px;
   border-radius: 5px;
 }
