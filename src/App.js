@@ -17,6 +17,16 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  function relayTodoHandler(id) {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id
+          ? { ...todo, isComplited: !todo.isComplited }
+          : { ...todo }
+      )
+    );
+  }
+
   function deleteTodoHandler(id) {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
@@ -25,7 +35,11 @@ function App() {
     <div className="App">
       <h1 className="Headline">Just do it</h1>
       <TodoForm addTodo={addTodoHandler} />
-      <TodoList todos={todos} deleteTodo={deleteTodoHandler} />
+      <TodoList
+        todos={todos}
+        deleteTodo={deleteTodoHandler}
+        relayTodo={relayTodoHandler}
+      />
     </div>
   );
 }
