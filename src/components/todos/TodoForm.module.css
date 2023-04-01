@@ -10,10 +10,10 @@
 .todoFormContainer button {
   margin-left: 20px;
   height: 50px;
-  color: whitesmoke;
+  color: white;
   cursor: pointer;
   font-size: 1.5rem;
-  border: 2px solid whitesmoke;
+  border: 2px solid white;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -24,13 +24,17 @@
   border: none;
 }
 
+.todoFormContainer input:focus {
+  outline-color: #aa5d93;
+}
+
 .todoFormContainer button:hover {
   color: white;
-  border-color: aquamarine;
+  border-color: #aa5d93;
 }
 
 .todoFormContainer input,
 .todoFormContainer button {
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
