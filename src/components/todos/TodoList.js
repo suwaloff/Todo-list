@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import styles from './TodoList.module.css';
 import Todo from './Todo';
 
 function TodoList({ todos, deleteTodo, relayTodo }) {
