@@ -7,5 +7,5 @@
 
 <a href="https://ibb.co/Qr8kdPv"><img src="https://i.ibb.co/RzhNy3T/todo.png" alt="todo" border="0"></a>
 <h3>
-   <a href="https://it-even-works.netlify.app/">link to view</a> 
+   <a href="https://it-even-works.netlify.app/">demo</a> 
 </h3>
